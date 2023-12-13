@@ -17,6 +17,12 @@ module.exports = {
       org: "org-t40",
       project: "test",
       authToken: process.env.SENTRY_AUTH_TOKEN,
+      release: {
+        create: true,
+        setCommits: {
+          auto: true,
+        },
+      },
     }),
   ],
   devServer: {

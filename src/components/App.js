@@ -15,10 +15,6 @@ class App extends Component {
       cart: [],
     };
 
-    // error
-    console.log("process error");
-    console.log(process.env.variable);
-
     // generate random email
     this.email = Math.random().toString(36).substring(2, 6) + "@yahoo.com";
 
@@ -98,7 +94,9 @@ class App extends Component {
 
   checkout() {
     // Generate an error
-    this.myCodeIsPerfect();
+    // this.myCodeIsPerfect();
+
+    this.method();
 
     const order = {
       email: this.email,
